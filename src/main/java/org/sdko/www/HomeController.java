@@ -21,4 +21,14 @@ public class HomeController {
     public String sitemap(Model model) {
         return "sitemap";
     }
+    
+    @GetMapping("/sws")
+    public String sws(Model model) {
+        return "sws";
+    }
+    
+    @GetMapping("/privacy")
+    public String privacy(Model model) {
+        return "privacy";
+    }
 } 

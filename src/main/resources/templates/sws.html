@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{_header :: head(pageTitle='SDKO Web Services')}"></head>
+<body>
+    <main>
+        <section id="what-is-sws">
+            <h1>SDKO Web Services (SWS)</h1>
+            <p>SDKO Web Services (SWS) is my personal web services platform for my homelab and personal projects.</p>
+        </section>
+
+        <section id="infrastructure">
+            <h2>Infrastructure</h2>
+            <p>My services are powered by servers located in Canadian data centers. Because I'm Canadian and live in Montreal, it wouldn't make sense to have infrastructure in US-West or other distant regions.</p>
+            
+            <p>All servers are hosted on one of the following providers, whose terms and privacy policies also apply:</p>
+            <ul>
+                <li>Amazon Web Services (AWS) - Canadian regions only</li>
+                <li>Linode - Canadian data centers</li>
+                <li>OVH - Canadian data centers</li>
+            </ul>
+            
+            <h3>External Gateway Servers</h3>
+            <p>The following servers handle external traffic:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>IPv4</th>
+                        <th>IPv6</th>
+                        <th>Provider</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>149.56.142.15</code></td>
+                        <td><code>2607:5300:201:3100::7d00</code></td>
+                        <td>OVH</td>
+                    </tr>
+                    <tr>
+                        <td><code>172.105.21.38</code></td>
+                        <td><code>2600:3c04::f03c:95ff:fe72:5f0c</code></td>
+                        <td>Linode</td>
+                    </tr>
+                    <tr>
+                        <td><code>99.79.69.51</code></td>
+                        <td><code>2600:1f11:dab:7b01:8ea3:f673:231d:b8d6</code></td>
+                        <td>AWS</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Internal Network</h3>
+            <p>Several additional servers are part of the internal network infrastructure. For security reasons, their IPs and specifications are not publicly listed.</p>
+        </section>
+
+        <section id="logging">
+            <h2>Logging and Data Retention</h2>
+            <p>I maintain minimal logging practices:</p>
+            <ul>
+                <li>Logs are stored and forwarded to a central logging server where they are analyzed and stored for a maximum of 30 days</li>
+                <li>No personal information is collected beyond what is necessary for service operation</li>
+                <li>All logs are stored exclusively on Canadian servers</li>
+            </ul>
+            
+            <h3>Security Measures</h3>
+            <p>I implement appropriate security measures for SWS, including encryption, regular updates, and industry standard practices. For security reasons, I don't publicly list all measures in detail.</p>
+            
+            <p>For more detailed information about my privacy practices, please visit the <a th:href="@{/privacy}">Privacy Policy</a>.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For important inquiries about SWS, please contact me at: <a href="mailto:dominic@sdko.org">dominic@sdko.org</a></p>
+            <p>Please only use this contact for significant matters relating to SWS.</p>
+        </section>
+    </main>
+    <footer th:replace="~{_footer :: footer}"></footer>
+</body>
+</html> 

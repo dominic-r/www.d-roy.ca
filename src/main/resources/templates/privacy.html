@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{_header :: head(pageTitle='Privacy Policy')}"></head>
+<body>
+    <main>
+        <section>
+            <h1>Privacy Policy</h1>
+            <p>Last updated: June 4, 2025</p>
+            
+            <p>This Privacy Policy describes how I handle information when you use SDKO Web Services ("SWS"). SWS is my personal platform. For more information about what SWS is, please see the <a th:href="@{/sws#what-is-sws}">What is SWS</a> section.</p>
+        </section>
+
+        <section>
+            <h2>1. Information Collection and Use</h2>
+            <p>I collect minimal information necessary to provide services:</p>
+            <ul>
+                <li>Server logs containing access timestamps, IP addresses, and requested resources</li>
+                <li>Technical information necessary for service operation and security</li>
+                <li>Performance metrics for system optimization</li>
+                <li>Security event data for threat detection and prevention</li>
+            </ul>
+            <p>No personal information is collected beyond what is required for basic service operation. I implement data minimization principles to ensure only necessary information is collected and stored.</p>
+            <p>All collected data is used solely for:</p>
+            <ul>
+                <li>Ensuring system security and reliability</li>
+                <li>Troubleshooting technical issues</li>
+                <li>Improving performance and stability</li>
+                <li>Protecting against unauthorized access or attacks</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>2. No Tracking Policy</h2>
+            <p>I do not implement any tracking or analytics on my public-facing websites, including:</p>
+            <ul>
+                <li><code>*.sdko.org</code></li>
+                <li><code>*.sdko.net</code></li>
+                <li><code>*.cadoma.net</code></li>
+                <li><code>*.d-roy.ca</code></li>
+            </ul>
+            <p>This means:</p>
+            <ul>
+                <li>No cookies for tracking purposes</li>
+                <li>No JavaScript analytics tools</li>
+                <li>No user behavior tracking</li>
+                <li>No third-party tracking pixels or beacons</li>
+                <li>No fingerprinting technologies</li>
+            </ul>
+            <p>Standard web server logs are maintained for security purposes only.</p>
+        </section>
+
+        <section>
+            <h2>3. Data Storage and Location</h2>
+            <p>All data is stored exclusively on servers located in Canada. For detailed information about server infrastructure, including the External Gateway Servers that handle external traffic, please visit the <a th:href="@{/sws#infrastructure}">Infrastructure</a> section of the SWS page.</p>
+            
+            <p>By keeping all data in Canadian jurisdiction, I ensure:</p>
+            <ul>
+                <li>Compliance with Canadian privacy expectations</li>
+                <li>Data is not subject to foreign jurisdiction laws</li>
+                <li>Lower latency for Canadian users</li>
+                <li>Geographic data sovereignty</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Logging and Retention</h2>
+            <p>I'm committed to privacy-focused practices. For detailed information about logging practices and security measures, please see the <a th:href="@{/sws#logging}">Logging and Data Retention</a> section of the SWS page.</p>
+            
+            <p>My retention policy follows these principles:</p>
+            <ul>
+                <li>Data is kept only as long as necessary for its intended purpose</li>
+                <li>Regular purging of outdated information</li>
+                <li>Automatic deletion of logs after the retention period</li>
+                <li>Sensitive information is purged more frequently than standard operational data</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Data Sharing</h2>
+            <p>I do not sell, trade, or otherwise transfer information to outside parties. Data remains within Canadian infrastructure and is not shared with third parties except when required by law.</p>
+            
+            <p>In the rare case where legal requirements mandate disclosure:</p>
+            <ul>
+                <li>Only the minimum required information would be provided</li>
+                <li>Any such disclosure would be documented</li>
+                <li>Affected parties would be notified if legally permissible</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Security</h2>
+            <p>I implement appropriate security measures to protect information. For details on security measures, please see the <a th:href="@{/sws#logging}">Logging and Data Retention</a> section of the SWS page.</p>
+            
+            <p>My security approach is based on defense-in-depth principles, with multiple layers of protection including:</p>
+            <ul>
+                <li>Network security controls</li>
+                <li>Encryption in transit and at rest</li>
+                <li>Access controls and authentication</li>
+                <li>Regular security patching</li>
+                <li>Intrusion detection and prevention</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Contact Information</h2>
+            <p>If you have important questions about this Privacy Policy, please contact me at: <a href="mailto:dominic@sdko.org">dominic@sdko.org</a></p>
+            <p>Please only use this contact for significant matters.</p>
+        </section>
+    </main>
+    <footer th:replace="~{_footer :: footer}"></footer>
+</body>
+</html> 
