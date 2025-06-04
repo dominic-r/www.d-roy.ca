@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Error - Dominic's Website</title>
-</head>
+<head th:insert="~{_header :: head(pageTitle='Error')}"></head>
 <body>
     <main>
         <section>
@@ -13,15 +9,9 @@
             <p th:if="${status}" th:text="'Error code: ' + ${status}"></p>
             <p th:if="${timestamp}" th:text="'Time: ' + ${timestamp}"></p>
             <p th:if="${path}" th:text="'Path: ' + ${path}"></p>
-            <p>You can return to <a href="/">the homepage</a> or try again later.</p>
+            <p>You can return to <a th:href="@{/}">the homepage</a> or try again later.</p>
         </section>
-
-        <hr />
-
-        <footer>
-            <p>&copy; 2025 Dominic R. All rights reserved.</p>
-            <p><a href="/sitemap">See sitemap here</a></p>
-        </footer>
     </main>
+    <footer th:replace="~{_footer :: footer}"></footer>
 </body>
 </html> 

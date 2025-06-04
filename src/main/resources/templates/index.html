@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dominic's Website</title>
-</head>
+<head th:insert="~{_header :: head(pageTitle=null)}"></head>
 <body>
     <main>
         <section>
             <p>Hi there! I'm Dominic - a high school student based in Canada.</p>
 
             <p>I have a strong interest in system administration, homelabbing, and I'm currently diving into software engineering, focusing on learning Java. 
-            You can check out some of my projects on <a href="/oss">my open source page</a>.</p>
+            You can check out some of my projects on <a th:href="@{/oss}">my open source page</a>.</p>
 
             <p>I'm currently working as a Technical Content Editor at 
                 <a href="https://goauthentik.io" target="_blank" rel="noopener noreferrer">Authentik Security</a>, 
@@ -20,13 +16,7 @@
             <p>You can also find me on GitHub: 
                 <a href="https://github.com/dominic-r" target="_blank" rel="noopener noreferrer">github.com/dominic-r</a>.</p>
         </section>
-
-        <hr />
-
-        <footer>
-            <p>&copy; 2025 Dominic R. All rights reserved.</p>
-            <p><a href="/sitemap">See sitemap here</a></p>
-        </footer>
     </main>
+    <footer th:replace="~{_footer :: footer}"></footer>
 </body>
 </html>

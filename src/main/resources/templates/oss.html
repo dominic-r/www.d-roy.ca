@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Open Source Projects - Dominic's Website</title>
-</head>
+<head th:insert="~{_header :: head(pageTitle='Open Source Projects')}"></head>
 <body>
     <main>
         <section>
@@ -18,11 +14,7 @@
         <p>This application is the first project I ever made in Java. It redirects requests from <a href="https://sdko.org">sdko.org</a> to my personal website <a href="https://www.d-roy.ca">d-roy.ca</a>.</p>
 
         <h3>TODO</h3>
-
-        <footer>
-            <p>&copy; 2025 Dominic R. All rights reserved.</p>
-            <p><a href="/sitemap">See sitemap here</a></p>
-        </footer>
     </main>
+    <footer th:replace="~{_footer :: footer}"></footer>
 </body>
 </html> 
