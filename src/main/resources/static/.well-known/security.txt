@@ -1,0 +1,4 @@
+Canonical: https://www.d-roy.ca/.well-known/security.txt
+Contact: mailto:01100100@sdko.org
+Expires: 2029-12-29T23:59:00Z
+Preferred-Languages: en
